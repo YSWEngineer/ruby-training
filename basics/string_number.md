@@ -1,7 +1,6 @@
 <details open><summary>🧩 Ruby基礎演習②：文字列と数値の応用練習</summary>
 
-### 🔹 レベル1：基本メソッドのおさらい
-
+## 🔹 レベル1：基本メソッドのおさらい
 次のコードを実行したときに、出力結果を答えてください。
 ```ruby
 puts "hello".capitalize
@@ -11,13 +10,12 @@ puts "ruby".include?("ru")
 puts "ruby".include?("Ra")
 ```
 
-<details open><summary>📍 回答・解説</summary>
+<details><summary>📍 回答・解説</summary>
   
 ```ruby
 >> puts "hello".capitalize
 Hello
 => nil
-# captitalize
 
 >> puts "ruby".upcase
 RUBY
@@ -35,9 +33,41 @@ true
 false
 => nil
 ```
+### capitalize
+```ruby
+"hello".capitalize #=> "Hello"
+```
+- 先頭の文字だけを大文字にして、他を小文字にする。
+- 文字列`"hello"` → `"Hello"`に変換。
+
+### upcase
+```ruby
+"ruby".upcase #=> "RUBY"
+```
+- すべての文字を大文字に変換する。
+
+### downcase
+```ruby
+"ChatGPT".downcase #=> "chatgpt"
+```
+- すべての文字を小文字に変換する。
+
+### include?("ru")
+```ruby
+"ruby".include?("ru") #=> true
+```
+- `"ru"`という部分文字列が`"ruby"`の中に含まれているかを調べる。含まれているので`true`。
+
+### include?("Ra")
+```ruby
+"ruby".include?("Ra") #=> false
+```
+- Ruby の文字列判定は大文字・小文字を区別する。`"Ra"`と`"ra"`は別物なので、結果は`false`。
 </details>
 
-🔹 レベル2：文字列と数値の変換
+---
+
+## 🔹 レベル2：文字列と数値の変換
 
 次のコードの出力結果を答えてください。
 
